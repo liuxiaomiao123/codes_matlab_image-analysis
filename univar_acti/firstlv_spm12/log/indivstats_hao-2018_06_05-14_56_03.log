@@ -1,0 +1,233 @@
+Current directory is: /Users/haol/Dropbox/Codes/Image/univar_acti/firstlv_spm12
+------------------------------------------------------------------
+-------------- Contents of the Parameter List --------------------
+                sessnum: 2
+                postfix: 'hao'
+              data_type: 'nii'
+               pipeline: 'swcar'
+            server_path: '/Users/haol/Downloads/scr_test/Preproc'
+             stats_path: '/Users/haol/Downloads/scr_test/FirstLv/FirstLv_3Cond'
+          parent_folder: ''
+            subjectlist: {31 cell}
+           exp_sesslist: {'ANT1'  'ANT2'}
+              task_dsgn: 'ANT_rig_hao.m'
+            contrastmat: '/Users/haol/Dropbox/Codes/Image/univar_acti/firstlv_spm12/con'
+    preprocessed_folder: 'smoothed_spm12'
+           stats_folder: 'ANT/stats_spm12_swcar'
+          include_mvmnt: 1
+      include_volrepair: 0
+            volpipeline: 'swavr'
+     volrepaired_folder: 'volrepair_spm12'
+         repaired_stats: 'stats_spm12_VolRepair'
+          template_path: '/Users/haol/Dropbox/Codes/Image/univar_acti/firstlv_spm12/dep'
+
+------------------------------------------------------------------
+Processing Subject: 16-12-11.1CBDPC 
+--------------------------------------------------------------
+Creating the directory: /Users/haol/Downloads/scr_test/FirstLv/FirstLv_3Cond/2016/16-12-11.1CBDPC/fmri/stats_spm12/ANT/stats_spm12_swcar 
+Changing to directory: /Users/haol/Downloads/scr_test/FirstLv/FirstLv_3Cond/2016/16-12-11.1CBDPC/fmri/stats_spm12/ANT/stats_spm12_swcar 
+Running the task design file: /Users/haol/Downloads/scr_test/Preproc/2016/16-12-11.1CBDPC/fmri/ANT1/task_design/ANT_rig_hao.m 
+Updating the task design with movement covariates
+Running the task design file: /Users/haol/Downloads/scr_test/Preproc/2016/16-12-11.1CBDPC/fmri/ANT2/task_design/ANT_rig_hao.m 
+Updating the task design with movement covariates
+
+
+------------------------------------------------------------------------
+Running job #1
+------------------------------------------------------------------------
+Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7210)                     14:56:12 - 05/06/2018
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7018)                     14:56:13 - 05/06/2018
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          14:56:24 - 05/06/2018
+Done    'fMRI model specification'
+Running 'Model estimation'
+
+SPM12: spm_spm (v7120)                             14:56:24 - 05/06/2018
+========================================================================
+
+SPM12: spm_est_non_sphericity (v6913)              14:56:25 - 05/06/2018
+========================================================================
+Chunk   1/5                             :                  ...processing                       ...doneChunk   2/5                             :                  ...processing                       ...doneChunk   3/5                             :                  ...processing                       ...doneChunk   4/5                             :                  ...processing                       ...doneChunk   5/5                             :                  ...processing                       ...done
+Temporal non-sphericity (224838 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...4.446677e+01 [+4.25]
+  ReML Iteration 2                      :        ...2.375161e-02 [+4.50]
+  ReML Block 2                
+  ReML Iteration 1                      :        ...1.530799e+01 [+4.25]
+  ReML Iteration 2                      :        ...2.927426e-02 [+4.50]
+
+SPM12: spm_spm (v7120)                             14:56:37 - 05/06/2018
+========================================================================
+Chunk   1/5                             :                  ...processing                       ...doneChunk   2/5                             :                  ...processing                       ...doneChunk   3/5                             :                  ...processing                       ...doneChunk   4/5                             :                  ...processing                       ...doneChunk   5/5                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          14:56:54 - 05/06/2018
+Done
+Done    'Model estimation'
+Running 'Contrast Manager'
+
+SPM12: spm_contrasts.m                             14:56:54 - 05/06/2018
+========================================================================
+Contrasts folder                        :        ./ANT/stats_spm12_swcar
+	contrast image  1               :                   ...computing       ...written con_0001.nii
+	spm{T} image  1                 :                   ...computing      ...written <a href="matlab:[hReg,xSPM,SPM] = spm_results_ui('Setup',struct('swd','/Users/haol/Downloads/scr_test/FirstLv/FirstLv_3Cond/2016/16-12-11.1CBDPC/fmri/stats_spm12/ANT/stats_spm12_swcar','Ic',1));TabDat = spm_list('List',xSPM,hReg);;">spmT_0001.nii</a>
+	contrast image  2               :                   ...computing       ...written con_0002.nii
+	spm{T} image  2                 :                   ...computing      ...written <a href="matlab:[hReg,xSPM,SPM] = spm_results_ui('Setup',struct('swd','/Users/haol/Downloads/scr_test/FirstLv/FirstLv_3Cond/2016/16-12-11.1CBDPC/fmri/stats_spm12/ANT/stats_spm12_swcar','Ic',2));TabDat = spm_list('List',xSPM,hReg);;">spmT_0002.nii</a>
+	contrast image  3               :                   ...computing       ...written con_0003.nii
+	spm{T} image  3                 :                   ...computing      ...written <a href="matlab:[hReg,xSPM,SPM] = spm_results_ui('Setup',struct('swd','/Users/haol/Downloads/scr_test/FirstLv/FirstLv_3Cond/2016/16-12-11.1CBDPC/fmri/stats_spm12/ANT/stats_spm12_swcar','Ic',3));TabDat = spm_list('List',xSPM,hReg);;">spmT_0003.nii</a>
+	Saving SPM.mat                  :                     ...writing              ...SPM.mat saved
+Completed                               :          14:56:55 - 05/06/2018
+Done    'Contrast Manager'
+Done
+
+Processing Subject: 16-12-25.1CBDPC 
+--------------------------------------------------------------
+Creating the directory: /Users/haol/Downloads/scr_test/FirstLv/FirstLv_3Cond/2016/16-12-25.1CBDPC/fmri/stats_spm12/ANT/stats_spm12_swcar 
+Changing to directory: /Users/haol/Downloads/scr_test/FirstLv/FirstLv_3Cond/2016/16-12-25.1CBDPC/fmri/stats_spm12/ANT/stats_spm12_swcar 
+Running the task design file: /Users/haol/Downloads/scr_test/Preproc/2016/16-12-25.1CBDPC/fmri/ANT1/task_design/ANT_rig_hao.m 
+Updating the task design with movement covariates
+Running the task design file: /Users/haol/Downloads/scr_test/Preproc/2016/16-12-25.1CBDPC/fmri/ANT2/task_design/ANT_rig_hao.m 
+Updating the task design with movement covariates
+
+
+------------------------------------------------------------------------
+Running job #1
+------------------------------------------------------------------------
+Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7210)                     14:57:02 - 05/06/2018
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7018)                     14:57:02 - 05/06/2018
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          14:57:13 - 05/06/2018
+Done    'fMRI model specification'
+Running 'Model estimation'
+
+SPM12: spm_spm (v7120)                             14:57:13 - 05/06/2018
+========================================================================
+
+SPM12: spm_est_non_sphericity (v6913)              14:57:13 - 05/06/2018
+========================================================================
+Chunk   1/5                             :                  ...processing                       ...doneChunk   2/5                             :                  ...processing                       ...doneChunk   3/5                             :                  ...processing                       ...doneChunk   4/5                             :                  ...processing                       ...doneChunk   5/5                             :                  ...processing                       ...done
+Temporal non-sphericity (217014 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...6.978183e+01 [+4.25]
+  ReML Iteration 2                      :        ...2.470079e+00 [+4.50]
+  ReML Iteration 3                      :        ...7.636563e-05 [+4.75]
+  ReML Block 2                
+  ReML Iteration 1                      :        ...7.925398e+01 [+4.25]
+  ReML Iteration 2                      :        ...1.197570e+01 [+4.50]
+  ReML Iteration 3                      :        ...1.134985e-01 [+4.75]
+  ReML Iteration 4                      :        ...4.165033e-03 [+5.00]
+
+SPM12: spm_spm (v7120)                             14:57:25 - 05/06/2018
+========================================================================
+Chunk   1/5                             :                  ...processing                       ...doneChunk   2/5                             :                  ...processing                       ...doneChunk   3/5                             :                  ...processing                       ...doneChunk   4/5                             :                  ...processing                       ...doneChunk   5/5                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          14:57:41 - 05/06/2018
+Done
+Done    'Model estimation'
+Running 'Contrast Manager'
+
+SPM12: spm_contrasts.m                             14:57:41 - 05/06/2018
+========================================================================
+Contrasts folder                        :        ./ANT/stats_spm12_swcar
+	contrast image  1               :                   ...computing       ...written con_0001.nii
+	spm{T} image  1                 :                   ...computing      ...written <a href="matlab:[hReg,xSPM,SPM] = spm_results_ui('Setup',struct('swd','/Users/haol/Downloads/scr_test/FirstLv/FirstLv_3Cond/2016/16-12-25.1CBDPC/fmri/stats_spm12/ANT/stats_spm12_swcar','Ic',1));TabDat = spm_list('List',xSPM,hReg);;">spmT_0001.nii</a>
+	contrast image  2               :                   ...computing       ...written con_0002.nii
+	spm{T} image  2                 :                   ...computing      ...written <a href="matlab:[hReg,xSPM,SPM] = spm_results_ui('Setup',struct('swd','/Users/haol/Downloads/scr_test/FirstLv/FirstLv_3Cond/2016/16-12-25.1CBDPC/fmri/stats_spm12/ANT/stats_spm12_swcar','Ic',2));TabDat = spm_list('List',xSPM,hReg);;">spmT_0002.nii</a>
+	contrast image  3               :                   ...computing       ...written con_0003.nii
+	spm{T} image  3                 :                   ...computing      ...written <a href="matlab:[hReg,xSPM,SPM] = spm_results_ui('Setup',struct('swd','/Users/haol/Downloads/scr_test/FirstLv/FirstLv_3Cond/2016/16-12-25.1CBDPC/fmri/stats_spm12/ANT/stats_spm12_swcar','Ic',3));TabDat = spm_list('List',xSPM,hReg);;">spmT_0003.nii</a>
+	Saving SPM.mat                  :                     ...writing              ...SPM.mat saved
+Completed                               :          14:57:42 - 05/06/2018
+Done    'Contrast Manager'
+Done
+
+Processing Subject: 17-09-11.1CBDPC 
+--------------------------------------------------------------
+Creating the directory: /Users/haol/Downloads/scr_test/FirstLv/FirstLv_3Cond/2017/17-09-11.1CBDPC/fmri/stats_spm12/ANT/stats_spm12_swcar 
+Changing to directory: /Users/haol/Downloads/scr_test/FirstLv/FirstLv_3Cond/2017/17-09-11.1CBDPC/fmri/stats_spm12/ANT/stats_spm12_swcar 
+Running the task design file: /Users/haol/Downloads/scr_test/Preproc/2017/17-09-11.1CBDPC/fmri/ANT1/task_design/ANT_rig_hao.m 
+Updating the task design with movement covariates
+Running the task design file: /Users/haol/Downloads/scr_test/Preproc/2017/17-09-11.1CBDPC/fmri/ANT2/task_design/ANT_rig_hao.m 
+Updating the task design with movement covariates
+
+
+------------------------------------------------------------------------
+Running job #1
+------------------------------------------------------------------------
+Running 'fMRI model specification'
+
+SPM12: spm_fMRI_design (v7210)                     14:57:49 - 05/06/2018
+========================================================================
+Saving fMRI design                      :               ...SPM.mat saved
+
+SPM12: spm_fmri_spm_ui (v7018)                     14:57:49 - 05/06/2018
+========================================================================
+Mapping files                           :                        ...done
+Calculating globals                     :                        ...done
+Saving SPM configuration                :               ...SPM.mat saved
+Saving SPM configuration                :               ...SPM.mat saved
+Completed                               :          14:58:00 - 05/06/2018
+Done    'fMRI model specification'
+Running 'Model estimation'
+
+SPM12: spm_spm (v7120)                             14:58:00 - 05/06/2018
+========================================================================
+
+SPM12: spm_est_non_sphericity (v6913)              14:58:00 - 05/06/2018
+========================================================================
+Chunk   1/5                             :                  ...processing                       ...doneChunk   2/5                             :                  ...processing                       ...doneChunk   3/5                             :                  ...processing                       ...doneChunk   4/5                             :                  ...processing                       ...doneChunk   5/5                             :                  ...processing                       ...done
+Temporal non-sphericity (211915 voxels) :             ...ReML estimation
+  ReML Block 1                
+  ReML Iteration 1                      :        ...1.054846e+01 [+4.25]
+  ReML Iteration 2                      :        ...9.001532e-05 [+4.50]
+  ReML Block 2                
+  ReML Iteration 1                      :        ...5.430459e+01 [+4.25]
+  ReML Iteration 2                      :        ...1.083322e+00 [+4.50]
+  ReML Iteration 3                      :        ...7.521299e-04 [+4.75]
+
+SPM12: spm_spm (v7120)                             14:58:12 - 05/06/2018
+========================================================================
+Chunk   1/5                             :                  ...processing                       ...doneChunk   2/5                             :                  ...processing                       ...doneChunk   3/5                             :                  ...processing                       ...doneChunk   4/5                             :                  ...processing                       ...doneChunk   5/5                             :                  ...processing                       ...done
+Spatial non-sphericity (over scans)     :      ...estimating derivatives ...writing resels/voxel image                       ...done
+Saving SPM.mat                          :                     ...writing                       ...done
+Completed                               :          14:58:28 - 05/06/2018
+Done
+Done    'Model estimation'
+Running 'Contrast Manager'
+
+SPM12: spm_contrasts.m                             14:58:28 - 05/06/2018
+========================================================================
+Contrasts folder                        :        ./ANT/stats_spm12_swcar
+	contrast image  1               :                   ...computing       ...written con_0001.nii
+	spm{T} image  1                 :                   ...computing      ...written <a href="matlab:[hReg,xSPM,SPM] = spm_results_ui('Setup',struct('swd','/Users/haol/Downloads/scr_test/FirstLv/FirstLv_3Cond/2017/17-09-11.1CBDPC/fmri/stats_spm12/ANT/stats_spm12_swcar','Ic',1));TabDat = spm_list('List',xSPM,hReg);;">spmT_0001.nii</a>
+	contrast image  2               :                   ...computing       ...written con_0002.nii
+	spm{T} image  2                 :                   ...computing      ...written <a href="matlab:[hReg,xSPM,SPM] = spm_results_ui('Setup',struct('swd','/Users/haol/Downloads/scr_test/FirstLv/FirstLv_3Cond/2017/17-09-11.1CBDPC/fmri/stats_spm12/ANT/stats_spm12_swcar','Ic',2));TabDat = spm_list('List',xSPM,hReg);;">spmT_0002.nii</a>
+	contrast image  3               :                   ...computing       ...written con_0003.nii
+	spm{T} image  3                 :                   ...computing      ...written <a href="matlab:[hReg,xSPM,SPM] = spm_results_ui('Setup',struct('swd','/Users/haol/Downloads/scr_test/FirstLv/FirstLv_3Cond/2017/17-09-11.1CBDPC/fmri/stats_spm12/ANT/stats_spm12_swcar','Ic',3));TabDat = spm_list('List',xSPM,hReg);;">spmT_0003.nii</a>
+	Saving SPM.mat                  :                     ...writing              ...SPM.mat saved
+Completed                               :          14:58:29 - 05/06/2018
+Done    'Contrast Manager'
+Done
+
+Changing back to the directory: /Users/haol/Dropbox/Codes/Image/univar_acti/firstlv_spm12 
+==================================================================
+fMRI Individual Stats finished at 2018/06/05 14:58:29 
+==================================================================

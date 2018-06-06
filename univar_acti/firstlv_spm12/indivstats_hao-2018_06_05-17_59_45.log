@@ -1,0 +1,78 @@
+Current directory is: /Users/haol/Dropbox/Codes/Image/univar_acti/firstlv_spm12
+------------------------------------------------------------------
+-------------- Contents of the Parameter List --------------------
+                sessnum: 2
+                postfix: 'hao'
+              data_type: 'nii'
+               pipeline: 'swcar'
+            server_path: '/Users/haol/Desktop/bc'
+             stats_path: '/Users/haol/Desktop/bc/xxx'
+          parent_folder: ''
+            subjectlist: {41 cell}
+           exp_sesslist: {'MS_01'  'MS_02'}
+              task_dsgn: 'taskdesign_MS_xjh.m'
+            contrastmat: '/Users/haol/Dropbox/Codes/Image/univar_acti/firstlv_spm12/contrast'
+    preprocessed_folder: 'smoothed_spm12'
+           stats_folder: 'MS/stats_spm12_swcar'
+          include_mvmnt: 1
+      include_volrepair: 0
+            volpipeline: 'swavr'
+     volrepaired_folder: 'volrepair_spm12'
+         repaired_stats: 'stats_spm12_VolRepair'
+          template_path: '/Users/haol/Dropbox/Codes/Image/univar_acti/firstlv_spm12/depend'
+
+------------------------------------------------------------------
+Processing Subject: 17-01-11.2DST 
+--------------------------------------------------------------
+Creating the directory: /Users/haol/Desktop/bc/xxx/2017/17-01-11.2DST/fmri/stats_spm12/MS/stats_spm12_swcar 
+[Warning: Directory already exists.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('indivstats_spm12', '/Users/haol/Dropbox/Codes/Image/univar_acti/firstlv_spm12/depend/indivstats_spm12.m', 138)" style="font-weight:bold">indivstats_spm12</a> (<a href="matlab: opentoline('/Users/haol/Dropbox/Codes/Image/univar_acti/firstlv_spm12/depend/indivstats_spm12.m',138,0)">line 138</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('scr_firstlv', '/Users/haol/Dropbox/Codes/Image/univar_acti/firstlv_spm12/scr_firstlv.m', 72)" style="font-weight:bold">scr_firstlv</a> (<a href="matlab: opentoline('/Users/haol/Dropbox/Codes/Image/univar_acti/firstlv_spm12/scr_firstlv.m',72,0)">line 72</a>)] 
+Changing to directory: /Users/haol/Desktop/bc/xxx/2017/17-01-11.2DST/fmri/stats_spm12/MS/stats_spm12_swcar 
+Running the task design file: /Users/haol/Desktop/bc/2017/17-01-11.2DST/fmri/MS_01/task_design/taskdesign_MS_xjh.m 
+Updating the task design with movement covariates
+Running the task design file: /Users/haol/Desktop/bc/2017/17-01-11.2DST/fmri/MS_02/task_design/taskdesign_MS_xjh.m 
+Updating the task design with movement covariates
+
+
+------------------------------------------------------------------------
+Running job #1
+------------------------------------------------------------------------
+Running 'fMRI model specification'
+Failed  'fMRI model specification'
+Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_run_fmri_spec', '/Users/haol/Dropbox/Toolbox/spm12/config/spm_run_fmri_spec.m', 239)" style="font-weight:bold">spm_run_fmri_spec</a> (<a href="matlab: opentoline('/Users/haol/Dropbox/Toolbox/spm12/config/spm_run_fmri_spec.m',239,0)">line 239</a>)
+Mismatch between number of onset and number of durations.
+In file "/Users/haol/Dropbox/Toolbox/spm12/config/spm_run_fmri_spec.m" (v6562), function "spm_run_fmri_spec" at <a href="matlab:opentoline('/Users/haol/Dropbox/Toolbox/spm12/config/spm_run_fmri_spec.m', 239, 0)">line 239</a>.
+
+Running 'Model estimation'
+Failed  'Model estimation'
+Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('load')" style="font-weight:bold">load</a>
+Unable to read file '/Users/haol/Desktop/bc/xxx/2017/17-01-11.2DST/fmri/stats_spm12/MS/stats_spm12_swcar/SPM.mat'. No such file or directory.
+In file "/Users/haol/Dropbox/Toolbox/spm12/config/spm_run_fmri_est.m" (v7057), function "spm_run_fmri_est" at <a href="matlab:opentoline('/Users/haol/Dropbox/Toolbox/spm12/config/spm_run_fmri_est.m', 19, 0)">line 19</a>.
+
+Running 'Contrast Manager'
+
+SPM12: spm_contrasts.m                             17:59:53 - 05/06/2018
+========================================================================
+Contrasts folder                        :         ./MS/stats_spm12_swcar
+Failed  'Contrast Manager'
+Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('load')" style="font-weight:bold">load</a>
+Unable to read file '/Users/haol/Desktop/bc/xxx/2017/17-01-11.2DST/fmri/stats_spm12/MS/stats_spm12_swcar/SPM.mat'. No such file or directory.
+In file "/Users/haol/Dropbox/Toolbox/spm12/config/spm_run_con.m" (v7093), function "spm_run_con" at <a href="matlab:opentoline('/Users/haol/Dropbox/Toolbox/spm12/config/spm_run_con.m', 28, 0)">line 28</a>.
+
+The following modules did not run:
+Failed: fMRI model specification
+Failed: Model estimation
+Failed: Contrast Manager
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MATLABbatch system')" style="font-weight:bold">MATLABbatch system</a>
+Job execution failed. The full log of this run can be found in MATLAB command window, starting
+with the lines (look for the line showing the exact #job as displayed in this error message)
+------------------
+Running job #1
+------------------
+} 
+scr_firstlv
+==================================================================
+fMRI IndividualStats start at 2018/06/05 18:01:51 
+==================================================================
