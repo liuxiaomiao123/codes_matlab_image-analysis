@@ -1,14 +1,13 @@
-% written by hao (ver_17.09.23)
+% written by hao (ver_18.06.08)
 % rock3.hao@gmail.com
 % qinlab.BNU
 clear
-clc
 
 %% Set up
-img_head = 'NS*';
-roi_dir  = '/Users/haol/Downloads';
-sub_dir  = {'di'};
-% group  = {'GrpAll';'NeuroSynth'};
+img_head = '*';
+roi_dir  = '~/Dropbox/Docum/Projects/BrainDev_ANT/Fig_Tab/Image/Masks';
+sub_dir  = {'Age_CBDC','FF_GrpxCond','Group_CBDA','Group_CBDC','Group_Threshold'};
+% group  = {'GrpAll','NeuroSynth'};
         
 %% Set Tranform Surface File
 surf_dir  = '~/Dropbox/Toolbox/Template_WB/Conte69_Atlas_32k_v2';
@@ -20,7 +19,7 @@ transurfR = fullfile (surf_dir, 'Conte69.R.midthickness.32k_fs_LR.surf.gii');
 % When convert ROI and the resulting surface image have strange shading
 % around the edges of the ROIs. Use "-enclosing" instead of "-trilinear"
 for grp = 1:length(sub_dir)
-    grp_dir     = fullfile(roi_dir, sub_dir{grp,1});
+    grp_dir     = fullfile(roi_dir, sub_dir{1,grp});
     niiconvlist = dir(fullfile(grp_dir, [img_head,'.nii']));
     for nii = 1: length(niiconvlist)
         niifile = fullfile(grp_dir, niiconvlist(nii).name);
