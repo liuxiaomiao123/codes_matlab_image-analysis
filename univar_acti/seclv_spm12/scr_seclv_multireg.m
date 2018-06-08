@@ -1,8 +1,8 @@
-% written by hao (ver_18.06.05)
+% written by hao (ver_18.06.08)
 % rock3.hao@gmail.com
 % qinlab.BNU
-clear
 restoredefaultpath
+clear
 
 %% Set Up
 spm_dir    = '/Users/haol/Dropbox/Toolbox/spm12';
